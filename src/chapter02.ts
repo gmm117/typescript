@@ -38,7 +38,7 @@ let timeoutPromise = new Promise((resolve, reject) => {
 
 timeoutPromise.then(value => console.log(value));
 
-import add from './chapterUtil02';
+import add from './chapterUtil02.js';
 
 const value = add(1, 2);
 console.log(value);

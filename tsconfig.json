@@ -1,0 +1,18 @@
+{
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude" : [
+        "node_modules"
+    ],
+    "compilerOptions": {
+        "module": "es6", // "module": "commonjs", 
+        "rootDir" : "src",
+        "outDir": "dist",
+        "target": "es6", // "target": "es5"
+        //"lib": ["es2015", "dom"],
+        "sourceMap": true, // typescript 파일을 개발자 디버거파일에 노출
+        "removeComments": true, // ts 추가한 주석은 js에 반영안됨
+        "noImplicitAny": true // 타입을 정의하지 않는경우 any타입이 되므로 타입을 추가할 경우 true로 추가해야함.
+    }
+}
